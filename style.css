@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#gradiente {
+    height: 363px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 730px;
+    margin-top: 123px;
+    gap: 40px;
+    opacity: 1;
+}
+
+h2, h3{
+    color: #4C545C;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+}
+
+
+p {
+    text-align: center;
+    color: #9EABB2;
+}
+
+.PdoCOmeço {
+    text-align: center;
+    color: #9EABB2;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 318px;
+    gap: 24px;
+}
+
+#botaoiOS, #botaoMac {
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1513) inset;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border: transparent;
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#botaoiOS {
+    background: var(--colors-green-500, rgba(38, 187, 164, 1));
+}
+
+#botaoMac {
+    background: var(--colors-blue-500, rgba(97, 116, 255, 1));
+}
+
+#botaoiOS:hover {
+    background: var(--colors-green-300, rgba(93, 204, 187, 1));
+}
+
+#botaoMac:hover {
+    background: var(--colors-blue-400, rgba(136, 151, 255, 1));
+}
+
+
+/* --- ESTILOS BASE E ESTRUTURA DOS CONTAINERS --- */
+.ferramenta {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.TextinhoCimaFerramenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ferramentaImgEtc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.ferramentaImgEtc img {
+    display: block;
+}
+.pontosPositivos{
+    margin-left: 64px;
+}
+.pontosPositivos {
+    margin-left: 0; /* tira os 64px que afetavam mobile/tablet */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* --- LUGARES --- */
+.lugares {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 29px;
+}
+
+.TextinhoCimaLugares,
+.TextinhoCimaFuncionalidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.imgLugares {
+    display: block;
+    width: 100%;
+    max-width: 312px;
+    height: auto;
+    margin-top: 64px;
+}
+
+/* --- FUNCIONALIDADE --- */
+.funcionalidade {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 29px;
+}
+
+.cardsFuncionalidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-top: 64px;
+    width: 100%;
+}
+
+.cardFuncao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 350px;
+}
+
+.cardFuncao img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.cardFuncao p {
+    text-align: center;
+}
+
+/* --- PARCEIROS --- */
+.parceiros {
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 0 29px;
+}
+
+.parceiros img {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* --- DOWNLOAD --- */
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto 120px;
+    padding: 0 29px;
+}
+
+.TextinhoDownload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+/* --- RODAPÉ --- */
+.rodape {
+    background: #F4F6F6;
+    width: 100%;
+    padding: 56px 29px;
+}
+
+.rodapeConteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.logoRodape {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.linksRodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.linksRodape ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.linksRodape a {
+    color: #4C545C;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.linksRodape a:hover {
+    color: rgba(38, 187, 164, 1);
+}
+
+.redesSociais {
+    display: flex;
+    gap: 16px;
+}
+
+.redesSociais img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}

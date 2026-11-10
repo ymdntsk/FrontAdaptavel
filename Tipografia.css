@@ -1,0 +1,103 @@
+.Text-Preset1{
+font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 46px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -0.75px;
+text-align: center;
+}
+
+
+.Text-Preset2{
+font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -0.75px;
+text-align: justify;
+
+}
+
+.Text-Preset3{
+    font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 36px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -0.6px;
+
+
+}
+
+.Text-Preset4{
+font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -0.5px;
+
+color: #4C545C;
+}
+
+.Text-Preset5{font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 28px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -0.5px;
+
+}
+
+.Text-Preset6{
+    font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 125%;
+letter-spacing: -0.4px;
+
+
+}
+
+.Text-Preset7{
+font-family: Bai Jamjuree;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0.5px;
+
+}
+
+
+.Text-Preset7R{
+font-family: Bai Jamjuree;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0.15px;
+text-align: center; 
+}
+
+.Text-Preset8{
+    font-family: Bai Jamjuree;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0.15px;
+
+}

@@ -1,0 +1,259 @@
+/* ==========================================
+   MOBILE / CELULAR (Até 767px)
+   ========================================== */
+@media (min-width: 375px) {
+    .Text-Preset1 {
+        text-align: center;
+        font-size: 28px;
+        line-height: 125%;
+        letter-spacing: -0.5px;
+    }
+
+    .Text-Preset5 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 125%;
+        letter-spacing: -0.5px;
+    }
+
+    .conteudo {
+        max-width: 600px;
+        padding: 0 29px;
+    }
+
+    .Text-Preset8 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+    }
+
+    .TextinhoCimaFerramenta {
+        max-width: 312px;
+        gap: 16px;
+    }
+
+    /* Imagem do Celular: 312x238 Centralizada */
+    .ferramentaImgEtc img {
+        width: 312px;
+        height: 238px;
+        margin: 0 auto;
+    }
+
+    .pontosPositivos {
+        width: 100%;
+        max-width: 312px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        text-align: center;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    .pontosPositivos p {
+        text-align: center;
+    }
+
+    .TextinhoPontosPositivos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+/* ==========================================
+   TABLET (768px até 1023px)
+   ========================================== */
+@media (min-width: 768px) {
+    .Text-Preset2 {
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+
+    .conteudo {
+        max-width: 600px;
+    }
+
+    .Text-Preset7R {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        text-align: center;
+    }
+
+    .TextinhoCimaFerramenta {
+        max-width: 616px;
+        gap: 16px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    #botaoiOS,
+    #botaoMac {
+        width: 225px;
+    }
+
+    /* Imagem Tablet: 608 x 462.5 Centralizada */
+    .ferramentaImgEtc img {
+        width: 608px;
+        height: 462.5px;
+        margin: 0 auto;
+    }
+
+    .pontosPositivos {
+        max-width: 608px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .pontosPositivos p {
+        text-align: center;
+    }
+
+    .TextinhoPontosPositivos {
+        align-items: center;
+    }
+
+    .imgLugares {
+    max-width: 608px;
+}
+
+.cardsFuncionalidade {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+}
+
+.parceiros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 48px;
+    max-width: 700px;
+}
+}
+.rodape {
+    padding: 56px 40px;
+}
+
+/* ==========================================
+   DESKTOP (A partir de 1024px)
+   ========================================== */
+@media (min-width: 1024px) {
+    .Text-Preset4 {
+        font-size: 46px;
+        line-height: 125%;
+        letter-spacing: -0.75px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .Text-Preset3 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.6px;
+        text-align: center;
+    }
+
+    .Text-Preset7R {
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+        text-align: center;
+    }
+
+    .TextinhoCimaFerramenta {
+        max-width: 730px;
+        gap: 16px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    #botaoiOS,
+    #botaoMac {
+        width: 225px;
+    }
+
+    /* Container Desktop: Largura de 1177px com gap de 72px conforme seu Figma */
+    .ferramentaImgEtc {
+        margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    height: 600px;
+    gap: 0;
+    margin: ;
+
+}
+
+/* Imagem: 755 x 600, encostada na esquerda do container */
+.ferramentaImgEtc img {
+    width: 755px;
+    height: 600px;
+    margin: 0;
+    object-fit: cover;
+    object-position: right center; /* se cortar, corta só o lado esquerdo */
+    flex-shrink: 0;
+}
+
+/* Lista à direita, alinhada à esquerda */
+.pontosPositivos {
+    width: 350px;
+    gap: 64px;
+    margin-top: 0;
+    margin-left: 72px; /* o espaço que era o gap */
+    flex-shrink: 0;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.pontosPositivos p {
+    text-align: left;
+}
+
+.TextinhoPontosPositivos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.imgLugares {
+    max-width: 730px;
+}
+
+.cardsFuncionalidade {
+    max-width: 1110px;
+    gap: 30px;
+}
+
+.parceiros {
+    max-width: 1110px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+}
