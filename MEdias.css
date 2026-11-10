@@ -149,7 +149,9 @@
 .rodape {
     padding: 56px 40px;
 }
-
+.rodape {
+    padding: 56px 40px;
+}
 /* ==========================================
    DESKTOP (A partir de 1024px)
    ========================================== */
@@ -255,5 +257,25 @@
     max-width: 1110px;
     justify-content: space-between;
     flex-wrap: nowrap;
+}
+.rodapeConteudo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.linksRodape {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.linksRodape ul {
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.rodape {
+    padding: 56px 0;
 }
 }
