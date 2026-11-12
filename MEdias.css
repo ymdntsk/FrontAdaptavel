@@ -1,7 +1,10 @@
-/* ==========================================
-   MOBILE / CELULAR (Até 767px)
-   ========================================== */
+
+/* ==========================================================
+   1. MOBILE / CELULAR (a partir de 375px)
+   ========================================================== */
 @media (min-width: 375px) {
+
+    /* ----- Tipografia ----- */
     .Text-Preset1 {
         text-align: center;
         font-size: 28px;
@@ -17,11 +20,6 @@
         letter-spacing: -0.5px;
     }
 
-    .conteudo {
-        max-width: 600px;
-        padding: 0 29px;
-    }
-
     .Text-Preset8 {
         font-family: 'Bai Jamjuree', sans-serif;
         text-align: center;
@@ -31,18 +29,26 @@
         letter-spacing: 0.15px;
     }
 
+    /* ----- Hero ----- */
+    .conteudo {
+        max-width: 600px;
+        padding: 0 29px;
+    }
+
+    /* ----- Ferramenta ----- */
     .TextinhoCimaFerramenta {
         max-width: 312px;
         gap: 16px;
     }
 
-    /* Imagem do Celular: 312x238 Centralizada */
+    /* Imagem do celular: 312 x 238 centralizada */
     .ferramentaImgEtc img {
         width: 312px;
         height: 238px;
         margin: 0 auto;
     }
 
+    /* Lista de pontos: centralizada e empilhada */
     .pontosPositivos {
         width: 100%;
         max-width: 312px;
@@ -66,19 +72,18 @@
     }
 }
 
-/* ==========================================
-   TABLET (768px até 1023px)
-   ========================================== */
+
+/* ==========================================================
+   2. TABLET (a partir de 768px)
+   ========================================================== */
 @media (min-width: 768px) {
+
+    /* ----- Tipografia ----- */
     .Text-Preset2 {
         font-size: 36px;
         line-height: 125%;
         letter-spacing: -0.5px;
         text-align: center;
-    }
-
-    .conteudo {
-        max-width: 600px;
     }
 
     .Text-Preset7R {
@@ -90,11 +95,12 @@
         text-align: center;
     }
 
-    .TextinhoCimaFerramenta {
-        max-width: 616px;
-        gap: 16px;
+    /* ----- Hero ----- */
+    .conteudo {
+        max-width: 600px;
     }
 
+    /* Botões lado a lado (hero e download) */
     .botoes {
         flex-direction: row;
         max-width: 100%;
@@ -102,11 +108,19 @@
     }
 
     #botaoiOS,
-    #botaoMac {
+    #botaoMac,
+    .botaoiOS,
+    .botaoMac {
         width: 225px;
     }
 
-    /* Imagem Tablet: 608 x 462.5 Centralizada */
+    /* ----- Ferramenta ----- */
+    .TextinhoCimaFerramenta {
+        max-width: 616px;
+        gap: 16px;
+    }
+
+    /* Imagem do tablet: 608 x 462.5 centralizada */
     .ferramentaImgEtc img {
         width: 608px;
         height: 462.5px;
@@ -127,35 +141,49 @@
         align-items: center;
     }
 
+    /* ----- Lugares ----- */
     .imgLugares {
-    max-width: 608px;
+        max-width: 608px;
+    }
+
+    /* ----- Funcionalidade ----- */
+    .cardsFuncionalidade {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    /* ----- Parceiros: uma linha só, espaçados ----- */
+    .parceiros {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        max-width: 608px;
+        padding: 0;
+    }
+
+    .parceiros img {
+        flex: 0 1 auto;
+        min-width: 0;
+        max-width: 18%;
+    }
+
+    /* ----- Rodapé ----- */
+    .rodape {
+        padding: 56px 40px;
+    }
 }
 
-.cardsFuncionalidade {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px;
-}
 
-.parceiros {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 48px;
-    max-width: 700px;
-}
-}
-.rodape {
-    padding: 56px 40px;
-}
-.rodape {
-    padding: 56px 40px;
-}
-/* ==========================================
-   DESKTOP (A partir de 1024px)
-   ========================================== */
+/* ==========================================================
+   3. DESKTOP (a partir de 1024px)
+   ========================================================== */
 @media (min-width: 1024px) {
+
+    /* ----- Tipografia ----- */
     .Text-Preset4 {
         font-size: 46px;
         line-height: 125%;
@@ -182,11 +210,7 @@
         text-align: center;
     }
 
-    .TextinhoCimaFerramenta {
-        max-width: 730px;
-        gap: 16px;
-    }
-
+    /* ----- Hero ----- */
     .botoes {
         flex-direction: row;
         max-width: 100%;
@@ -194,88 +218,103 @@
     }
 
     #botaoiOS,
-    #botaoMac {
+    #botaoMac,
+    .botaoiOS,
+    .botaoMac {
         width: 225px;
     }
 
-    /* Container Desktop: Largura de 1177px com gap de 72px conforme seu Figma */
+    /* ----- Ferramenta ----- */
+    .TextinhoCimaFerramenta {
+        max-width: 730px;
+        gap: 16px;
+    }
+
+    /* Container do Figma: 1440 x 600, gap 0, centralizado */
     .ferramentaImgEtc {
-        margin-top: 64px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 1440px;
-    height: 600px;
-    gap: 0;
-    margin: ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 1440px;
+        height: 600px;
+        gap: 0;
+    }
 
-}
+    /* Imagem: 755 x 600, encostada na esquerda do container */
+    .ferramentaImgEtc img {
+        width: 755px;
+        height: 600px;
+        margin: 0;
+        object-fit: cover;
+        object-position: right center; /* se cortar, corta só o lado esquerdo */
+        flex-shrink: 0;
+    }
 
-/* Imagem: 755 x 600, encostada na esquerda do container */
-.ferramentaImgEtc img {
-    width: 755px;
-    height: 600px;
-    margin: 0;
-    object-fit: cover;
-    object-position: right center; /* se cortar, corta só o lado esquerdo */
-    flex-shrink: 0;
-}
+    /* Lista à direita, alinhada à esquerda */
+    .pontosPositivos {
+        width: 350px;
+        gap: 64px;
+        margin-top: 0;
+        margin-left: 72px; /* espaço entre o monitor e a lista */
+        flex-shrink: 0;
+        text-align: left;
+        align-items: flex-start;
+    }
 
-/* Lista à direita, alinhada à esquerda */
-.pontosPositivos {
-    width: 350px;
-    gap: 64px;
-    margin-top: 0;
-    margin-left: 72px; /* o espaço que era o gap */
-    flex-shrink: 0;
-    text-align: left;
-    align-items: flex-start;
-}
+    .pontosPositivos p {
+        text-align: left;
+    }
 
-.pontosPositivos p {
-    text-align: left;
-}
+    .TextinhoPontosPositivos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 
-.TextinhoPontosPositivos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-}
-.imgLugares {
-    max-width: 730px;
-}
+    /* ----- Lugares ----- */
+    .imgLugares {
+        max-width: 730px;
+    }
 
-.cardsFuncionalidade {
-    max-width: 1110px;
-    gap: 30px;
-}
+    /* ----- Funcionalidade ----- */
+    .cardsFuncionalidade {
+        max-width: 1110px;
+        gap: 30px;
+    }
 
-.parceiros {
-    max-width: 1110px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-.rodapeConteudo {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+    /* ----- Parceiros ----- */
+    .parceiros {
+        max-width: 1110px;
+        gap: 32px;
+    }
 
-.linksRodape {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 40px;
-}
+    .parceiros img {
+        max-width: 200px;
+        max-height: 48px;
+    }
 
-.linksRodape ul {
-    align-items: flex-start;
-    gap: 8px;
-}
+    /* ----- Rodapé: tudo em uma linha ----- */
+    .rodape {
+        padding: 56px 0;
+    }
 
-.rodape {
-    padding: 56px 0;
-}
+    .rodapeConteudo {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .linksRodape {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .linksRodape ul {
+        align-items: flex-start;
+        gap: 8px;
+    }
 }

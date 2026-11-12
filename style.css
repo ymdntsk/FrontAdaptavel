@@ -1,9 +1,28 @@
+/* ==========================================================
+   1. RESET E GERAL
+   ========================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Evita barra de rolagem horizontal (imagem que vaza a tela) */
+body {
+    overflow-x: hidden;
+}
+
+h2,
+h3 {
+    color: #4C545C;
+}
+
+p {
+    text-align: center;
+    color: #9EABB2;
+}
+
+/* Imagem de gradiente no fundo do topo */
 #gradiente {
     height: 363px;
     position: absolute;
@@ -11,6 +30,10 @@
     z-index: -1;
 }
 
+
+/* ==========================================================
+   2. HERO (TOPO)
+   ========================================================== */
 main {
     display: flex;
     align-items: center;
@@ -23,15 +46,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   width: 730px;
+    width: 730px;
     margin-top: 123px;
     gap: 40px;
     opacity: 1;
 }
 
-h2, h3{
-    color: #4C545C;
-}
+/* Bloco de texto genérico (centralizado) */
 .texto {
     display: flex;
     flex-direction: column;
@@ -41,17 +62,17 @@ h2, h3{
     gap: 16px;
 }
 
-
-p {
-    text-align: center;
-    color: #9EABB2;
-}
-
+/* Parágrafo do hero */
 .PdoCOmeço {
     text-align: center;
     color: #9EABB2;
 }
 
+
+/* ==========================================================
+   3. BOTÕES
+   Usados no hero (por id) e na seção de download (por classe)
+   ========================================================== */
 .botoes {
     display: flex;
     flex-direction: column;
@@ -60,7 +81,11 @@ p {
     gap: 24px;
 }
 
-#botaoiOS, #botaoMac {
+/* Estilo comum dos dois botões */
+#botaoiOS,
+#botaoMac,
+.botaoiOS,
+.botaoMac {
     box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1513) inset;
     font-family: 'Bai Jamjuree', sans-serif;
     color: white;
@@ -77,24 +102,32 @@ p {
     transition: background 0.2s ease;
 }
 
-#botaoiOS {
+/* Botão iOS (verde) */
+#botaoiOS,
+.botaoiOS {
     background: var(--colors-green-500, rgba(38, 187, 164, 1));
 }
 
-#botaoMac {
-    background: var(--colors-blue-500, rgba(97, 116, 255, 1));
-}
-
-#botaoiOS:hover {
+#botaoiOS:hover,
+.botaoiOS:hover {
     background: var(--colors-green-300, rgba(93, 204, 187, 1));
 }
 
-#botaoMac:hover {
+/* Botão Mac (azul) */
+#botaoMac,
+.botaoMac {
+    background: var(--colors-blue-500, rgba(97, 116, 255, 1));
+}
+
+#botaoMac:hover,
+.botaoMac:hover {
     background: var(--colors-blue-400, rgba(136, 151, 255, 1));
 }
 
 
-/* --- ESTILOS BASE E ESTRUTURA DOS CONTAINERS --- */
+/* ==========================================================
+   4. FERRAMENTA (monitor + pontos positivos)
+   ========================================================== */
 .ferramenta {
     margin-top: 160px;
     display: flex;
@@ -104,6 +137,7 @@ p {
     width: 100%;
 }
 
+/* Título + parágrafo acima da imagem */
 .TextinhoCimaFerramenta {
     display: flex;
     flex-direction: column;
@@ -112,6 +146,7 @@ p {
     margin: 0 auto;
 }
 
+/* Container da imagem + lista de pontos */
 .ferramentaImgEtc {
     display: flex;
     flex-direction: column;
@@ -123,18 +158,16 @@ p {
 .ferramentaImgEtc img {
     display: block;
 }
-.pontosPositivos{
-    margin-left: 64px;
-}
+
+/* Lista de pontos positivos (margem zerada; no desktop ela é definida no MEdias.css) */
 .pontosPositivos {
-    margin-left: 0; /* tira os 64px que afetavam mobile/tablet */
+    margin-left: 0;
 }
 
-body {
-    overflow-x: hidden;
-}
 
-/* --- LUGARES --- */
+/* ==========================================================
+   5. LUGARES (dispositivos)
+   ========================================================== */
 .lugares {
     margin-top: 160px;
     display: flex;
@@ -144,6 +177,7 @@ body {
     padding: 0 29px;
 }
 
+/* Título + parágrafo (usado em Lugares e Funcionalidade) */
 .TextinhoCimaLugares,
 .TextinhoCimaFuncionalidade {
     display: flex;
@@ -161,7 +195,10 @@ body {
     margin-top: 64px;
 }
 
-/* --- FUNCIONALIDADE --- */
+
+/* ==========================================================
+   6. FUNCIONALIDADE (3 cards)
+   ========================================================== */
 .funcionalidade {
     margin-top: 120px;
     display: flex;
@@ -199,7 +236,11 @@ body {
     text-align: center;
 }
 
-/* --- PARCEIROS --- */
+
+/* ==========================================================
+   7. PARCEIROS (logos)
+   Mobile: empilhados | Tablet/Desktop: ver MEdias.css
+   ========================================================== */
 .parceiros {
     margin: 120px auto;
     display: flex;
@@ -211,12 +252,17 @@ body {
 }
 
 .parceiros img {
-    max-height: 40px;
     width: auto;
+    height: auto;
+    max-height: 36px;
+    max-width: 140px;
     object-fit: contain;
 }
 
-/* --- DOWNLOAD --- */
+
+/* ==========================================================
+   8. DOWNLOAD
+   ========================================================== */
 .download {
     display: flex;
     flex-direction: column;
@@ -236,7 +282,10 @@ body {
     gap: 16px;
 }
 
-/* --- RODAPÉ --- */
+
+/* ==========================================================
+   9. RODAPÉ
+   ========================================================== */
 .rodape {
     background: #F4F6F6;
     width: 100%;
@@ -258,6 +307,7 @@ body {
     object-fit: contain;
 }
 
+/* Links do rodapé */
 .linksRodape {
     display: flex;
     flex-direction: column;
@@ -283,6 +333,7 @@ body {
     color: rgba(38, 187, 164, 1);
 }
 
+/* Redes sociais */
 .redesSociais {
     display: flex;
     gap: 16px;
